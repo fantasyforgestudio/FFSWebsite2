@@ -1,0 +1,122 @@
+/* mfa.css */
+
+.mfa-settings {
+    border: 1px solid #003366;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f0f4f8;
+    margin: 20px auto;
+    max-width: 400px; /* Ensures it doesn't stretch to wide */
+    overflow: hidden; /* Prevents overflow */
+    font-family: sans-serif;
+}
+
+    /* Make the header stand out with a bold font and contrasting background */
+    .mfa-settings h2 {
+        margin-bottom: 15px;
+        font-size: 2rem;
+        background-color: #003366;
+        color: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+.mfa-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .mfa-buttons button {
+        padding: 10px;
+        border: none;
+        background-color: #003366;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .mfa-buttons button:hover {
+            background-color: #002244;
+        }
+
+.mfa-flow {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .mfa-flow input[type="text"] {
+        padding: 8px;
+        border: 1px solid #003366;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .mfa-flow button {
+        padding: 10px;
+        border: none;
+        background-color: #007acc;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .mfa-flow button:hover {
+            background-color: #005fa3;
+        }
+
+.mfa-loading {
+    color: #666;
+    font-style: italic;
+}
+
+.mfa-error {
+    color: red;
+    margin-top: 10px;
+}
+
+.mfa-success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.mfa-qr-code {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .mfa-settings {
+        padding: 15px;
+        margin: 10px;
+        max-width: 100%;
+    }
+
+        .mfa-settings h2 {
+            font-size: 1.8rem;
+            padding: 8px;
+        }
+
+    .mfa-buttons button,
+    .mfa-flow button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .mfa-flow input[type="text"] {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+}
+/* End of mfa.css */

@@ -1,0 +1,121 @@
+/* ============================= */
+/* FantasyForge Studio - Login Page Styles */
+/* Original Layout & Spacing Preserved */
+/* ============================= */
+
+/* Page Layout */
+.login-container {
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #111;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-header h1 {
+    color: #FFA500;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #111;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #FFA500;
+}
+
+.error-message {
+    color: #ff4444;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #FFA500;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #ffb733;
+}
+
+.submit-button:disabled {
+    background: #333;
+    cursor: not-allowed;
+}
+
+.toggle-form {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.toggle-form button {
+    background: none;
+    border: none;
+    color: #FFA500;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.toggle-form button:hover {
+    text-decoration: underline;
+}
+
+.loading {
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+/* ============================= */
+/* Mobile Responsiveness for Login Page */
+/* ============================= */
+@media (max-width: 480px) {
+    .login-container {
+        margin: 2rem auto;
+        padding: 1.5rem;
+    }
+
+    .login-header h1 {
+        font-size: 1.75rem;
+    }
+}

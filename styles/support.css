@@ -1,0 +1,212 @@
+/* Support Page Styles */
+.support-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #000;
+    color: #fff;
+}
+
+/* Universal Web-Safe Font */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 42px;
+    color: #FFA500;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: color 0.2s ease-in-out; /* Smooth transition */
+}
+
+    h1:hover, h2:hover {
+        color: #FFC107; /* Subtle highlight effect */
+    }
+
+/* Paragraph Styling */
+p {
+    font-size: 20px;
+    color: #ddd;
+    max-width: 700px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em; /* Improves readability */
+}
+
+/* Contact Info & FAQ Sections */
+.contact-info, .faq-section {
+    font-size: 36px;
+    color: #FFA500;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Accessibility Enhancements */
+a:focus, button:focus {
+    outline: 4px solid #FFD700;
+    transition: outline 0.2s ease-in-out; /* Smooth focus visibility */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .support-container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2, .contact-info, .faq-section {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+.support-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #111;
+    color: #FFA500;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.support-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #FFA500;
+}
+
+.support-hero p {
+    max-width: auto;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.support-content {
+    display: grid;
+    gap: 2rem;
+}
+
+.support-section {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.support-section h2 {
+    color: #FFA500;
+    margin-bottom: 1.5rem;
+}
+
+.faq-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    padding: 1.5rem;
+    background: #111;
+    border-radius: 8px;
+}
+
+.faq-item h3 {
+    color: #FFA500;
+    margin-bottom: 1rem;
+}
+
+.faq-item p {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #FFA500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #FFA500;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #000;
+    color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #FFA500;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #000;
+    color: #FFA500;
+    border: 1px solid #FFA500;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #fff;
+    color: #FFA500;
+}
+
+@media (max-width: 768px) {
+    .support-container {
+        padding: 1rem;
+    }
+
+    .support-hero h1 {
+        font-size: 2rem;
+    }
+
+    .support-section {
+        padding: 1.5rem;
+    }
+
+    .faq-item {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,176 @@
+/* ============================= */
+/* FantasyForge Studio - Navbar Styles */
+/* Black/Orange/White Theme */
+/* ============================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFA500 !important;
+}
+
+.navbar-brand a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+    overflow: visible;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-links a {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, background 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.navbar-links a:hover, .navbar-links a.active {
+    background-color: transparent;
+    color: #FFA500;
+    background: #222;
+    }
+
+.cart-container {
+    background: none !important;
+    padding: 0 !important;
+}
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon svg {
+    fill: #fff;
+    transition: fill 0.3s ease !important;
+}
+
+.cart-icon:hover svg {
+    fill: #000 !important;
+}
+
+img {
+    filter: hue-rotate(0deg) !important; /* Resets unexpected color changes */
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #FFA500;
+    color: #FFF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 2px solid #000;
+}
+
+.logout-button {
+    background-color: #FFA500;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #fff;
+    color: #FFA500;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cart-icon {
+        margin: 0 auto;
+    }
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav a, .nav-auth-btn {
+    text-decoration: none;
+    color: #FFA500; /* Orange text for high contrast */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+    /* Hover & Focus Styles for Better Accessibility */
+    nav a:hover, nav a:focus, .nav-auth-btn:hover, .nav-auth-btn:focus {
+        background-color: #555;
+        border-radius: 5px;
+        outline: 3px solid #FFA500; /* High-visibility focus outline */
+    }
+
+    /* Keyboard navigation improvements */
+    nav a:focus, .nav-auth-btn:focus {
+        outline: 4px solid #FFD700; /* Slightly brighter yellow for focus distinction */
+    }
+
+/* Screen Reader & ARIA Enhancements */
+nav {
+    role: "navigation";
+    aria-label: "Main Navigation";
+}
+
+/* Mobile Accessibility */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}

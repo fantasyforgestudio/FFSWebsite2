@@ -1,0 +1,177 @@
+/* About Page Styles */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Universal Web-Safe Font */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 42px;
+    color: #FFA500;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: color 0.2s ease-in-out; /* Smooth transition */
+}
+
+    h1:hover, h2:hover {
+        color: #FFC107; /* Subtle highlight effect */
+    }
+
+/* Paragraph Styling */
+p {
+    font-size: 20px;
+    color: #ddd;
+    max-width: 700px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em; /* Improves readability */
+}
+
+/* Footer Styling (For Consistency) */
+footer {
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Accessibility Enhancements */
+a:focus, button:focus {
+    outline: 4px solid #FFD700;
+    transition: outline 0.2s ease-in-out; /* Smooth focus visibility */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+.about-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #111;
+    color: #FFA500;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #FFA500;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.about-content {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-section {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h2 {
+    color: #FFA500;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #111;
+    color: #FFA500;
+    border-radius: 10px;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #FFA500;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 2px solid #FFA500;
+    color: #FFA500;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    border: 2px solid #FFA500;
+    color: #FFA500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 1rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-section {
+        padding: 1.5rem;
+    }
+}
